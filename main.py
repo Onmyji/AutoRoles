@@ -5,7 +5,7 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_member_join(member):
-    role = discord.utils.get(member.guild.roles, name="/q")
+    role = discord.utils.get(member.guild.roles, name="The name of the role you want to give to new users")
     await member.add_roles(role)
 
-client.run("MTA1NzYyMTQ1MTY2ODIwOTc2Ng.GnHUX9.8KtDkcoRhKP-a4PuUC6K_Hwufso2MP2IcBXtWI")
+client.run("YOUR_TOKEN")
